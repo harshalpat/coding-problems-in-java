@@ -1,6 +1,5 @@
 import java.util.*; 
-  
-// Importing Matcher class that searches through a text for 
+
 // multiple occurences of a regular expression   
 import java.util.regex.Matcher; 
   
@@ -10,21 +9,16 @@ import java.util.regex.Pattern;
 // Importing Pattern class to compile regex 
   
 // Class 
-class GFG { 
-  
-    // Main driver method 
+class regex {  
     public static void main(String[] args) 
-    { 
-        // Random string input 
-        String gfg = "Welcome, to, GFG"; 
+    {
+        String intro = "I, am, harshal, i, am, a, software, developer!!"; 
   
         // Splitting of string into characters and 
         // storing it in an array string 
         // spearated by comma in between characters 
-        String[] str = gfg.split(","); 
-  
-        // Traversing the above array 
-        // using for each loop 
+        String[] str = intro.split(","); 
+   
         for (String s : str) { 
   
             // Print the characters of the array 
