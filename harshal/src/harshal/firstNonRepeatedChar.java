@@ -13,11 +13,15 @@ public class firstNonRepeatedChar {
 		char ch[] = s.toCharArray();
 		for (int i=0; i<s.length();i++) {
 			
-			int n = 'a' - i;
+			int n = s.charAt(i) - 'a';
 			alpha[n]++;
 		}
-		for(int element: alpha){
-			System.out.println(element);
+		for(int element = 0; element<26; element++){
+			//System.out.println(element);
+			
+			if( alpha[element] >1) {
+				System.out.println("character "+ element);
+			}
 		}
 
 	}
